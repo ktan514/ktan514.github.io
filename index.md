@@ -5,5 +5,6 @@ title: トップページ
 
 # トップページです
 
-* [hoge](sample/hoge.html)
-* [huga](sample/huga.html)
+* [gitについて](./git/manual/startup.md)
+* [hoge](./sample/hoge.md)
+* [huga](./sample/huga.md)
