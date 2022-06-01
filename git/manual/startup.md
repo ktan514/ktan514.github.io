@@ -46,7 +46,7 @@ git add *
 
 ### 2. ステージ内容をコミット
 ```
-git commit -m "コメントを記入する"
+git commit -m [コメントを記入する]
 ```
 
 ### 3. リモートにプッシュ
@@ -57,11 +57,37 @@ git pull
 
 - 指定のブランチ(origin main)にプッシュする。
 ```
-git push origin main
+git push origin [main]
 ```
 
 ___
+## ■ リモートの修正を取り込む
+
+```
+git pull
+```
+
+___
+## ■ ログの確認
+
+```
+git log
+
+# or 
+
+git log --oneline
+
+# or 
+
+git log --graph
+```
+
+
+
+___
 ## ■ ブランチ
+
+### 1. ブランチの作成
 
 現在のブランチ名を表示する。
 ```
@@ -71,20 +97,67 @@ git branch
 ブランチを切る。
 - 新しいブランチを作成してカレントディレクトリにチェックアウト
 ```
-git checkout -b "ブランチ名"
+git checkout -b [ブランチ名]
 ```
 
 - 既存のブランチをカレントディレクトリにチェックアウト
 ```
-git checkout "ブランチ名"
+git checkout [ブランチ名]
 ```
 
-ブランチ("ブランチ名")をmasterにマージする。  
-※masterにブランチの修正点が反映される。ブランチは削除されない。
+ブランチ("ブランチ名")をmainにマージする。  
+>mainにブランチの修正点が反映される。ブランチは削除されない。
 ```
-git checkout master
+git checkout main
 
-git merge --no-ff "ブランチ名"
+git merge --no-ff [ブランチ名]
+```
+
+
+___
+### 2. ブランチの削除
+
+```
+# 方法１
+git branch -d [削除するブランチ名]
+git push origin [削除するブランチ名]
+
+
+# 方法２
+git push origin --delete [削除するブランチ名]
+```
+
+
+___
+## ■ ロールバック
+
+ローカルリポジトリにコミットした修正を取り消したい場合。  
+^は１つ前のコミットを取り消す。  
+~はN回分のコミットを取り消す。
+```
+git reset --head HEAD^
+
+# or
+
+git reset --head HEAD~N
+```
+
+さらに、プッシュすることでリモートの修正も取り消す。
+```
+git push -f origin [ブランチ]
+```
+
+
+## ■ ファイル削除
+
+ローカルとリモートの両方からファイルを削除する。
+```
+git rm [ファイル名]
+```
+
+また、リモートのファイルのみ削除する。
+```
+git rm --cached [ファイル名]
 ```
 
 ___
@@ -95,6 +168,6 @@ ___
 ```
 git rm -r --cached .
 git add .
-git commit -m ".gitignore is now working"
+git commit -m ".gitignoreを再適応する。"
 ```
 
