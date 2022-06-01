@@ -1,9 +1,9 @@
 ---
 layout: default
-title: ƒgƒbƒvƒy[ƒW
+title: ãƒˆãƒƒãƒ—ãƒšãƒ¼ã‚¸
 ---
 
-# ƒgƒbƒvƒy[ƒW‚Å‚·
+# ãƒˆãƒƒãƒ—ãƒšãƒ¼ã‚¸ã§ã™
 
 * [hoge](sample/hoge.html)
 * huga(sample/huga.html)
@@ -40,5 +40,5 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and weçª¶å†¤l help you sort it out.
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and weé¯ï½¶èœ€ï½¤l help you sort it out.
 >>>>>>> cd4f4037c2c62ba114467d200c0da2c29e34670c
